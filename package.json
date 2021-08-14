@@ -1,4 +1,5 @@
 {
+  "homepage": "https://snufkinwa.github.io/calculator/",
   "name": "calculator",
   "version": "0.1.0",
   "private": true,
@@ -12,6 +13,8 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "calculator -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
